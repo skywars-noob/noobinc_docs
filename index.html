@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noob Inc文檔</title>
+  <!-- 網站圖標 -->
+  <link rel="icon" href="https://cdn.noobtw.top/icon.png" type="image/png">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Noob Inc文檔">
+  <meta property="og:description" content="Noob Inc文檔">
+  <meta property="og:image" content="https://cdn.noobtw.top/icon.png">
+  <meta property="og:url" content="https://docs.noobtw.top">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <style>
+    :root {
+      --docsifytabs-border-color: #505050;
+      --docsifytabs-tab-highlight-color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'NoobHost文檔',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: true,
+      notFoundPage: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜尋',
+        noData: '找不到結果',
+        depth: 6
+      },
+      tabs: {
+        persist: true, // default
+        sync: false, // default
+        theme: 'material', // default
+        tabComments: true, // default
+        tabHeadings: true // default
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
